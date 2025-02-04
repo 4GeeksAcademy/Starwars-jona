@@ -1,0 +1,31 @@
+.boton-1{ 
+    background-color: rgb(43, 110, 255);
+} 
+.boton-2{ 
+    background-color: rgb(167, 255, 226);
+} 
+.boton-3{ 
+    background-color: rgb(196, 73, 73);
+} 
+.image{ 
+    padding-bottom: 10px;
+} 
+.cora{ 
+   margin-left: 5px; 
+   border-radius: 10px; 
+   background-color:#d85555;
+
+} 
+.bi-heart{ 
+    padding: 3px; 
+    stroke: black; 
+    stroke-width: 0.5px;
+} 
+
+.dropdown{ 
+    padding-right: 20px; 
+    
+} 
+.quitar{ 
+    margin-left: 20px;
+}
