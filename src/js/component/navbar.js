@@ -9,7 +9,7 @@ export const Navbar = () => {
 	
 	return (
 		<nav className="navbar navbar-light bg-light mb-3" >
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7X3Gdn7IimjO94b66fkWTc3sZ_Y9S0FI8ZrDJQnP95Sb7OB3QYOnB32TpN-Jgof8l_U&usqp=CAU" className="navbar-brand mb-0 h1" style={{ height: '250px' }} />
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7X3Gdn7IimjO94b66fkWTc3sZ_Y9S0FI8ZrDJQnP95Sb7OB3QYOnB32TpN-Jgof8l_U&usqp=CAU" className="navbar-brand mb-0 h1" style={{ height: '190px' }} />
 
 			<div className="ml-auto">
 
@@ -17,7 +17,7 @@ export const Navbar = () => {
 
 				<div class="dropdown Favoritos">
 					<button class="btn btn-danger dropdown-toggle" style={{width:'300px', height:'70px'}} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Favoritos
+						Favoritos {store.favorito.length >0?`(${store.favorito.length})`:''}
 					</button>
 					<ul class="dropdown-menu dropdown-menu-white" style={{width:'300px'}}>
 						{ store.favorito.length > 0 ?( 

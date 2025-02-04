@@ -8,7 +8,8 @@
     background-color: rgb(196, 73, 73);
 } 
 .image{ 
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
+    max-width: 100%;
 } 
 .cora{ 
    margin-left: 5px; 
@@ -27,5 +28,46 @@
     
 } 
 .quitar{ 
-    margin-left: 20px;
+    margin-left: 30px;
+} 
+.Carta{   
+    margin: 20px; 
+    border-radius: 20px;      
+    border:2px solid #818181;   
+   
+    
+
+} 
+.Container{   
+   border-radius: 10px;
+    display: inline-block; 
+    margin-left: 450px; 
+    
+} 
+.tarjeta{ 
+    
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
+    padding: 10px; 
+    border-top: 2px solid #ff6464;   
+    margin-top: 5px;   
+
+} 
+.Cuerpo{ 
+    display: flex; 
+    padding: 16px; 
+} 
+.Parrafo{ 
+    padding-top: 50px; 
+    padding-left: 20px;
+} 
+.titulo{ 
+   text-align: center; 
+   padding-bottom: 70px;
+}  
+.foto{ 
+    margin-top: 170px; 
+
 }
+

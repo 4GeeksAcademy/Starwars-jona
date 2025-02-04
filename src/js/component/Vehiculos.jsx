@@ -44,9 +44,9 @@ return (
     {
       store.vehiculos.map((item, index) => {
         return (
-          <div className='col-6' key={index}>
+          <div className='col-2 Carta' key={index}>
             <h4>{item.name}</h4> 
-            <img  className='image' src={vehicleImages[item.name]} alt={item.name} style={{width:'400px', height:'auto'}}/> 
+            <img  className='image' src={vehicleImages[item.name]} alt={item.name} style={{width:'200px', height:'auto'}}/> 
             <br></br>
                   <Link className=' btn btn-primary' to={`/Vehicle/${item.uid}`}>Learn More</Link>
             <button className='cora' onClick={()=>handleAddFavorite(item)}>
