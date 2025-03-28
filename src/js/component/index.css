@@ -1,25 +1,72 @@
-.boton-1{ 
-    background-color: rgb(43, 110, 255);
-} 
+.boton-1 {
+    background: linear-gradient(to right, #002086, #4a92ff); /* Rojo oscuro a rojo claro */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+/* Cambia a otro degradado en hover */
+.boton-1:hover {
+    background: linear-gradient(to right, #09005e, #00a2ff); /* Rojo anaranjado a dorado */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+}
 .boton-2{ 
-    background-color: rgb(167, 255, 226);
-} 
+    background: linear-gradient(to right, #008346, #00a84c); /* Rojo oscuro a rojo claro */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}  
+.boton-2:hover {
+    background: linear-gradient(to right, #06551e, #00ff15); /* Rojo anaranjado a dorado */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+}
 .boton-3{ 
-    background-color: rgb(196, 73, 73);
-} 
+    background: linear-gradient(to right, #920000, #d80c05); /* Rojo oscuro a rojo claro */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}  
+.boton-3:hover {
+    background: linear-gradient(to right, #830000, #ff0022); /* Rojo anaranjado a dorado */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+}
 .image{ 
     padding-bottom: 10px; 
-    max-width: 100%;
+    max-width: 100%; 
+   
 } 
-.cora{ 
-   margin-left: 5px; 
-   border-radius: 10px; 
-   background-color:#d85555;
-
-} 
+.cora {
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: fill 0.3s ease;
+  }
+  
+  .cora svg {
+    fill: grey; /* Color gris por defecto */
+    transition: fill 0.3s ease-in-out;
+  }
+  
+  .cora:hover svg {
+    fill: red; /* Cambia a rojo en hover */
+  }
 .bi-heart{ 
     padding: 3px; 
-    stroke: black; 
+
     stroke-width: 0.5px;
 } 
 
@@ -69,5 +116,33 @@
 .foto{ 
     margin-top: 170px; 
 
-}
+} 
+.btn1{ 
+    background: linear-gradient(to right, #002086, #4a92ff); /* Rojo oscuro a rojo claro */ 
+    height: 40px; 
+    padding: 0.375rem 0.75rem; 
+    font-size: 18px; 
+    border-radius: 0.25rem; 
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
 
+} 
+.btn1:hover{ 
+    background: linear-gradient(to right, #09005e, #00a2ff); /* Rojo anaranjado a dorado */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+} 
+.btnfav{ 
+    background: linear-gradient(to right, #920000, #d80c05); /* Rojo oscuro a rojo claro */
+    color: rgb(0, 0, 0); /* Texto blanco */
+    border: none;
+   
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}  
+.btnfav:hover {
+    background: linear-gradient(to right, #830000, #ff0022); /* Rojo anaranjado a dorado */
+    transform: scale(1.05); /* Pequeño zoom al pasar el mouse */
+}

@@ -22,9 +22,9 @@ export const Home = () => {
 
 	return(
 	<div className="text-center mt-5 container">
-		<button className="boton-1" onClick={()=>showComponent("personajes")} style={{width:'200px',height:'60px'}}><strong>Personajes</strong></button> 
-		<button className="boton-2"  onClick={()=>showComponent("planet")} style={{width:'200px',height:'60px'}}><strong>Planet</strong></button>
-		<button className="boton-3" onClick={()=>showComponent("vehiculo")} style={{width:'200px',height:'60px'}}><strong>Vehiculos</strong></button>
+		<button className="boton-1" onClick={()=>showComponent("personajes")} style={{width:'200px',height:'60px'}}><strong>Characters</strong></button> 
+		<button className="boton-2"  onClick={()=>showComponent("planet")} style={{width:'200px',height:'60px'}}><strong>Planets</strong></button>
+		<button className="boton-3" onClick={()=>showComponent("vehiculo")} style={{width:'200px',height:'60px'}}><strong>Vehicules</strong></button>
 
 
 { 

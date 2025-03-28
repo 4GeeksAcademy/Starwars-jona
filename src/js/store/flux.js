@@ -4,7 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			planets: [],
 			personajes: [],
 			vehiculos: [],
-            favorito:[]
+            favorito: []
 		},
 		actions: {
 			personajes: async () => {
@@ -57,53 +57,32 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 
 			}, 
-			addFavorito: async (character)=>{ 
-               const store=getStore();  
-                  let existe=store.favorito.find((ele)=>ele.uid ==character.uid)
-			   if(!existe){ //aqui el some es un metodo condicional que trae y revisa si el character.uid y el fav son iguales 
-				setStore({...store,favorito:[...store.favorito,character]}); 
-			   } 
-			   else{ 
-				setStore({...store,favorito:store.favorito.filter(fav=>fav.uid !== character.uid)});
-
-			   }
-                
-
+			addFavorito: async (character) => {
+				const store = getStore();
+				let existe = store.favorito.some((ele) => ele.uid === character.uid && ele.type === "character");
 			
-			
-			},  
-			addPlanetFavorito: async (planet)=>{ 
-				const store=getStore();  
-				   let existe=store.favorito.find((ele)=>ele.uid ==planet.uid)
-				if(!existe){ //aqui el some es un metodo condicional que trae y revisa si el planet.uid y el fav son iguales 
-				 setStore({...store,favorito:[...store.favorito,planet]}); 
-				} 
-				else{ 
-				 setStore({...store,favorito:store.favorito.filter(fav=>fav.uid !== planet.uid)});
- 
+				if (!existe) {
+					setStore({ ...store, favorito: [...store.favorito, { ...character, type: "character" }] });
 				}
-				 
- 
-			 
-			 
-			 },  
-			 addVehiFavorito: async (vehi)=>{ 
-				const store=getStore();  
-				   let existe=store.favorito.find((ele)=>ele.uid ==vehi.uid)
-				if(!existe){ //aqui el some es un metodo condicional que trae y revisa si el planet.uid y el fav son iguales 
-				 setStore({...store,favorito:[...store.favorito,vehi]}); 
-				} 
-				else{ 
-				 setStore({...store,favorito:store.favorito.filter(fav=>fav.uid !== vehi.uid)});
- 
-				}
-				 
- 
-			 
-			 
-			 },
-			 
+			},
 			
+			addPlanetFavorito: async (planet) => {
+				const store = getStore();
+				let existe = store.favorito.some((ele) => ele.uid === planet.uid && ele.type === "planet");
+			
+				if (!existe) {
+					setStore({ ...store, favorito: [...store.favorito, { ...planet, type: "planet" }] });
+				}
+			},
+			
+			addVehiFavorito: async (vehi) => {
+				const store = getStore();
+				let existe = store.favorito.some((ele) => ele.uid === vehi.uid && ele.type === "vehicle");
+			
+				if (!existe) {
+					setStore({ ...store, favorito: [...store.favorito, { ...vehi, type: "vehicle" }] });
+				}
+			},
 			
 			removeFavorito: async (characterId,planetId,vehicleId)=>{ 
 				const store = getStore(); 

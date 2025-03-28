@@ -16,8 +16,8 @@ export const Navbar = () => {
 
 
 				<div class="dropdown Favoritos">
-					<button class="btn btn-danger dropdown-toggle" style={{width:'300px', height:'70px'}} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Favoritos {store.favorito.length >0?`(${store.favorito.length})`:''}
+					<button class="btnfav btn-danger dropdown-toggle" style={{width:'300px', height:'70px'}} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Favorites {store.favorito.length >0?`(${store.favorito.length})`:''}
 					</button>
 					<ul class="dropdown-menu dropdown-menu-white" style={{width:'300px'}}>
 						{ store.favorito.length > 0 ?( 
